@@ -11,7 +11,8 @@
       "Bash(git commit *)",
       "Bash(git branch *)",
       "Bash(git remote *)",
-      "Bash(git push *)"
+      "Bash(git push *)",
+      "Bash(npx cap *)"
     ],
     "additionalDirectories": [
       "C:\\Users\\USER\\AI-Founders\\cf-board\\cf-board"

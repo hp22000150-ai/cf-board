@@ -81,7 +81,7 @@ const defaultProject = makeProject('기본 현장')
 
 export const useAppStore = create<AppState>()(
   persist<AppState>(
-    (set, get) => ({
+    (set, _get) => ({
       board: defaultBoard,
       projects: [defaultProject],
       currentProjectId: defaultProject.id,

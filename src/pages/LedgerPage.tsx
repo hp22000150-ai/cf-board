@@ -4,7 +4,7 @@ import { useAppStore, buildSerialMap, selectCurrentProject } from '../store'
 import { IS_PC } from '../App'
 import { PageData, SavedPhoto } from '../types'
 import { exportA4Page } from '../utils/exportA4'
-import { exportAllAsPDF, exportAllAsJpg, printAllPages } from '../utils/exportPDF'
+import { exportAllAsPDF, printAllPages } from '../utils/exportPDF'
 import SlotBoardEditor from '../components/SlotBoardEditor'
 import { rotateImage, compositeBoard } from '../utils/compositeBoard'
 
@@ -68,10 +68,6 @@ export default function LedgerPage() {
     try { await exportAllAsPDF(pages, serialMap) } finally { setExporting(null) }
   }
 
-  const handleExportAllJpg = async () => {
-    setExporting('jpg')
-    try { await exportAllAsJpg(pages, serialMap) } finally { setExporting(null) }
-  }
 
   const handlePrint = async () => {
     setExporting('print')

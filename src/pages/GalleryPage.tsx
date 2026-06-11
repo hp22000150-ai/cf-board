@@ -6,7 +6,7 @@ import { compositeBoard } from '../utils/compositeBoard'
 
 export default function GalleryPage() {
   const navigate = useNavigate()
-  const { board, pendingSlot, setSlotPhoto, setPendingSlot } = useAppStore()
+  const { pendingSlot, setSlotPhoto, setPendingSlot } = useAppStore()
   const [showEditor, setShowEditor] = useState(false)
   const [rawDataUrl, setRawDataUrl] = useState<string | null>(null)
   const [preview, setPreview] = useState<string | null>(null)

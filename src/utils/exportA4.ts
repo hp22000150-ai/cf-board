@@ -9,7 +9,7 @@ const GAP = 8
 export async function renderPageCanvas(
   slots: Array<SavedPhoto | null>,
   slotCount: 2 | 3,
-  pageNumber: number,
+  _pageNumber: number,
   serials?: Map<string, number>
 ): Promise<HTMLCanvasElement> {
   const canvas = document.createElement('canvas')

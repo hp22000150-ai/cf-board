@@ -10,9 +10,13 @@
     "build": "tsc -b && vite build",
     "build:mobile": "tsc -b && vite build --mode mobile",
     "build:pc": "tsc -b && vite build --mode pc",
+    "build:apk": "npm run build:mobile && npx cap sync android && npx cap open android",
     "preview": "vite preview"
   },
   "dependencies": {
+    "@capacitor/android": "^8.4.0",
+    "@capacitor/cli": "^8.4.0",
+    "@capacitor/core": "^8.4.0",
     "date-fns": "^3.6.0",
     "jspdf": "^4.2.1",
     "react": "^18.3.1",

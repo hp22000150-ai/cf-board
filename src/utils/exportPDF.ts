@@ -1,5 +1,5 @@
 import { jsPDF } from 'jspdf'
-import { PageData, SavedPhoto } from '../types'
+import { PageData } from '../types'
 import { renderPageCanvas } from './exportA4'
 
 export async function exportAllAsPDF(
